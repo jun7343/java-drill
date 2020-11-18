@@ -18,6 +18,9 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
+    implementation group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.18'
+
     testCompile('org.junit.jupiter:junit-jupiter-api')
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine')
 }
