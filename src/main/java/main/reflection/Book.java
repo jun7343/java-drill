@@ -1,5 +1,6 @@
 package main.reflection;
 
+@MyAnnotation
 public class Book {
 
     private String A = "A";

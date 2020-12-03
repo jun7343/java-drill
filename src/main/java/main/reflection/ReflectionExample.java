@@ -68,5 +68,11 @@ public class ReflectionExample {
         });
     }
 
+    public void getAnnotation() {
+        Arrays.stream(myBookClass1.getAnnotations()).forEach(System.out::println);
+    }
 
+    public void getDeclaredAnnotation() {
+        Arrays.stream(myBookClass1.getDeclaredAnnotations()).forEach(System.out::println);
+    }
 }
