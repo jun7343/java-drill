@@ -1,11 +1,5 @@
 # Design Pattern - GoF (Gang of Four)
----
 
-## :high_brightness: Goals
-
-Gang of Four 생성, 구조, 행동 세가지로 분류되는 디자인 패턴 코드를 작성해보고 이해
-
----
 1. 생성 패턴
    - Class
      - [ ] Factory Method
@@ -13,7 +7,7 @@ Gang of Four 생성, 구조, 행동 세가지로 분류되는 디자인 패턴 �
        - [ ] Abstract Factory
        - [ ] Builder
        - [ ] Prototype
-       - [ ] Singleton
+       - [x] [Singleton](./creational/singleton)
 2. 구조 패턴
    - Class
      - [ ] Adapter (Class)
