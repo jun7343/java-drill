@@ -2,7 +2,7 @@ package io.drill.java;
 
 import io.drill.java.reflection.ReflectionExample;
 
-public class Application {
+public class MainApplication {
 
     static ReflectionExample reflectionExample = new ReflectionExample();
 
