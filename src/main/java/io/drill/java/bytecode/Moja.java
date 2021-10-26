@@ -1,4 +1,4 @@
-package main.bytecode;
+package io.drill.java.bytecode;
 
 public class Moja {
 

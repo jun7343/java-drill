@@ -1,4 +1,4 @@
-package main.bytecode;
+package io.drill.java.bytecode;
 
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.description.type.TypeDescription;

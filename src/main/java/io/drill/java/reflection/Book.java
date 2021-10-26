@@ -1,4 +1,4 @@
-package main.reflection;
+package io.drill.java.reflection;
 
 @MyAnnotation
 public class Book {

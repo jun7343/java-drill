@@ -1,4 +1,4 @@
-package main;
+package io.drill.java;
 
 public class JavaFoo {
 

@@ -1,4 +1,4 @@
-package main.bytecode;
+package io.drill.java.bytecode;
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.implementation.FixedValue;

@@ -1,4 +1,4 @@
-package main.reflection;
+package io.drill.java.reflection;
 
 import java.lang.annotation.*;
 

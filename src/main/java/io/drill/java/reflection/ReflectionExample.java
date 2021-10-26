@@ -1,4 +1,4 @@
-package main.reflection;
+package io.drill.java.reflection;
 
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ public class ReflectionExample {
     Class<?> myBookClass3;
     {
         try {
-            myBookClass3 = Class.forName("main.reflection.MyBook");
+            myBookClass3 = Class.forName("io.drill.java.reflection.MyBook");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

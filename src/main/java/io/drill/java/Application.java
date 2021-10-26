@@ -1,9 +1,6 @@
-package main;
+package io.drill.java;
 
-import main.reflection.Book;
-import main.reflection.ReflectionExample;
-
-import java.util.Arrays;
+import io.drill.java.reflection.ReflectionExample;
 
 public class Application {
 
