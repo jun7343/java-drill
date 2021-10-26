@@ -1,7 +1,7 @@
 # Design Pattern - GoF (Gang of Four)
 ---
 
-##:high_brightness: Goals
+## :high_brightness: Goals
 
 Gang of Four 생성, 구조, 행동 세가지로 분류되는 디자인 패턴 코드를 작성해보고 이해
 
