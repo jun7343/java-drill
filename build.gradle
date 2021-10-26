@@ -1,28 +1,25 @@
-// Groovy DSL sample
-
 plugins {
-    id 'org.springframework.boot' version '2.2.2.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-
-    id 'idea'
-    id 'java'
-    id 'jacoco'
+    id "java"
+    id "idea"
+    id "jacoco"
 }
 
-group 'main'
-version '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_1_8
+group "io.drill.java"
+version "0.0.1-SNAPSHOT"
+sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    // https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy
-    implementation group: 'net.bytebuddy', name: 'byte-buddy', version: '1.10.18'
+ext {
+    JUPITER_VERSION = "5.7.2"
+}
 
-    testCompile('org.junit.jupiter:junit-jupiter-api')
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine')
+dependencies {
+    implementation "net.bytebuddy:byte-buddy:1.10.18"
+    testCompile "org.junit.jupiter:junit-jupiter-api:$JUPITER_VERSION"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$JUPITER_VERSION"
 }
 
 test {
@@ -32,12 +29,12 @@ test {
 
     useJUnitPlatform()
 
-    finalizedBy 'jacocoTestReport'
+    finalizedBy "jacocoTestReport"
 }
 
 jacoco {
     // JaCoCo 버전
-    toolVersion = '0.8.5'
+    toolVersion = "0.8.5"
 
 //  테스트결과 리포트를 저장할 경로 변경
 //  default는 "${project.reporting.baseDir}/jacoco"
@@ -56,16 +53,16 @@ jacocoTestReport {
 //      xml.destination file("$buildDir/jacoco.xml")
     }
 
-    finalizedBy 'jacocoTestCoverageVerification'
+    finalizedBy "jacocoTestCoverageVerification"
 }
 
 jacocoTestCoverageVerification {
     violationRules {
         rule {
-            // 'element'가 없으면 프로젝트의 전체 파일을 합친 값을 기준으로 한다.
+            // "element"가 없으면 프로젝트의 전체 파일을 합친 값을 기준으로 한다.
             limit {
-                // 'counter'를 지정하지 않으면 default는 'INSTRUCTION'
-                // 'value'를 지정하지 않으면 default는 'COVEREDRATIO'
+                // "counter"를 지정하지 않으면 default는 "INSTRUCTION"
+                // "value"를 지정하지 않으면 default는 "COVEREDRATIO"
                 minimum = 0.00
             }
         }
@@ -75,47 +72,47 @@ jacocoTestCoverageVerification {
             enabled = true
 
             // 룰을 체크할 단위는 클래스 단위
-            element = 'CLASS'
+            element = "CLASS"
 
             // 브랜치 커버리지를 최소한 90% 만족시켜야 한다.
             limit {
-                counter = 'BRANCH'
-                value = 'COVEREDRATIO'
+                counter = "BRANCH"
+                value = "COVEREDRATIO"
                 minimum = 0.00
             }
 
             // 라인 커버리지를 최소한 80% 만족시켜야 한다.
             limit {
-                counter = 'LINE'
-                value = 'COVEREDRATIO'
+                counter = "LINE"
+                value = "COVEREDRATIO"
                 minimum = 0.00
             }
 
             // 빈 줄을 제외한 코드의 라인수를 최대 200라인으로 제한한다.
             limit {
-                counter = 'LINE'
-                value = 'TOTALCOUNT'
+                counter = "LINE"
+                value = "TOTALCOUNT"
                 maximum = 200
 //              maximum = 8
             }
 
             // 커버리지 체크를 제외할 클래스들
             excludes = [
-//                    '*.test.*',
-//                    '*.Kotlin*'
+//                    "*.test.*",
+//                    "*.Kotlin*"
             ]
         }
     }
 }
 
 task testCoverage(type: Test) {
-    group 'verification'
-    description 'Runs the unit tests with coverage'
+    group "verification"
+    description "Runs the unit tests with coverage"
 
-    dependsOn(':test',
-            ':jacocoTestReport',
-            ':jacocoTestCoverageVerification')
+    dependsOn(":test",
+            ":jacocoTestReport",
+            ":jacocoTestCoverageVerification")
 
-    tasks['jacocoTestReport'].mustRunAfter(tasks['test'])
-    tasks['jacocoTestCoverageVerification'].mustRunAfter(tasks['jacocoTestReport'])
+    tasks["jacocoTestReport"].mustRunAfter(tasks["test"])
+    tasks["jacocoTestCoverageVerification"].mustRunAfter(tasks["jacocoTestReport"])
 }
