@@ -23,8 +23,7 @@ ExampleObject 객체를 생성할 때 위와 같은 argument 값을 일일이 �
 해당 Class에 들어가 생성자 Parameter 순서를 확인해 보는 불상사가 발생할 수 있다.
 
 ```java
-
-private ExampleDomain exampleObject = new ExampleDomain(1, 2, "3", null, 4, 5, null, "7");
+ExampleDomain exampleDomain = new ExampleDomain(1, 2, "3", null, 4, 5, null, "7");
 ```
 
 위와 같이 argument를 일일이 순서에 맞게 기입해야 하며, argument 값이 null 일 경우에도 argument 순서를 위해 기입해 줘야하는 번거로움이 있다.
