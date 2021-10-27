@@ -4,21 +4,21 @@
    - Class
      - [ ] Factory Method
    - Object
-       - [ ] Abstract Factory
-       - [ ] Builder
-       - [ ] Prototype
-       - [x] [Singleton](./creational/singleton)
+     - [ ] Abstract Factory
+     - [x] [Builder](./creational/builder)
+     - [ ] Prototype
+     - [x] [Singleton](./creational/singleton)
 2. 구조 패턴
    - Class
      - [ ] Adapter (Class)
    - Object
-      - [ ] Adapter (Object)
-      - [ ] Bridge
-      - [ ] Composite
-      - [ ] Decorator
-      - [ ] Facade
-      - [ ] Flyweight
-      - [ ] Proxy
+     - [ ] Adapter (Object)
+     - [ ] Bridge
+     - [ ] Composite
+     - [ ] Decorator
+     - [ ] Facade
+     - [ ] Flyweight
+     - [ ] Proxy
 3. 행동 패턴
    - Class
      - [ ] Interpreter
