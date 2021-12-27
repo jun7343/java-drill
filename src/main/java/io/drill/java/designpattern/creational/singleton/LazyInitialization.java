@@ -1,4 +1,4 @@
-package io.drill.java.design_pattern.creational.singleton;
+package io.drill.java.designpattern.creational.singleton;
 
 public class LazyInitialization {
 
