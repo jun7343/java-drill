@@ -1,4 +1,4 @@
-package io.drill.java.datastructure.linear;
+package io.drill.java.datastructure.linear.queue;
 
 import java.util.NoSuchElementException;
 

@@ -1,4 +1,4 @@
-package io.drill.java.datastructure.nonlinear;
+package io.drill.java.datastructure.nonlinear.graph;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package io.drill.java.datastructure.nonlinear;
+package io.drill.java.datastructure.nonlinear.tree;
 
 public class BinaryTree<T> {
     private class Node<T> {

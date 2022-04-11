@@ -7,4 +7,4 @@
 ## :pencil: List
 
 - 정렬(Sorting)
-  - [Sorting](./Sorting)
+  - [x] [Sorting](./Sorting)

@@ -7,9 +7,11 @@
 ## :pencil: List 
 
 - 선형 구조(Linear Structure)
-  - [Linked List](./LinkedList)
-  - [Queue](./Queue)
-  - [Stack](./Stack)
+  - [ ] List
+  - [x] [Linked List](./linear/linkedlist)
+  - [x] [Stack](./linear/stack)
+  - [x] [Queue](./linear/queue)
+  - [ ] Deck
 - 비선형구조(Non-Linear Structure)
-  - [Binary Tree](./BinaryTree)
-  - [Graph](./Graph)
+  - [x] [Tree](./nonlinear/tree)
+  - [x] [Graph](./nonlinear/graph)

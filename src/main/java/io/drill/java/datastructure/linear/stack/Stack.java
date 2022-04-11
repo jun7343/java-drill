@@ -1,4 +1,4 @@
-package io.drill.java.datastructure.linear;
+package io.drill.java.datastructure.linear.stack;
 
 import java.util.EmptyStackException;
 
