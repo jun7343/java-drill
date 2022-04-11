@@ -7,6 +7,7 @@ plugins {
 group "io.drill.java"
 version "0.0.1-SNAPSHOT"
 sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
